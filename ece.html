@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECE Course</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            
+            margin: 0;
+            padding: 0;
+            background-color: hsl(0, 0%, 96%);
+            background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),url(depart.jpeg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        header {
+            background-color: #071e3ff5;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav {
+            background-color: #579dcd;
+            padding: 1em;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 1em;
+            font-weight: bold;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #06152c;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <script>
+        
+    document.getElementById('goHomeLink').addEventListener('click', function() {
+        document.getElementById('home').scrollIntoView({ behavior: 'smooth' });
+    });
+</script>
+
+    
+</head>
+<body >
+
+    <header>
+        <h1><marquee  scrollamount="15" >Electrical and Computer Engineering </marquee></h1>
+    </header>
+
+    <nav>
+        <div class="container">
+            <a href="btech.html">Home</a>
+            <a href="#about">About</a>
+            <a href="#courses">Courses</a>
+            <a href="#contact">Contact</a>
+            <a href="btech.html" id="goHomeLink">Go Home</a>
+        </div>
+    </nav>
+    <font color="white">
+    <section id="home">
+        <div class="container">
+            <h2>Welcome to our  ECE Department!</h2>
+            <p> Electrical Engineers plays a vital role in training engineers who are equipped with the knowledge and skills to tackle complex challenges in fields ranging from electronics and telecommunications to computer systems and beyond.</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Learn ECE from industry experts with hands-on experience.</p>
+        </div>
+    </section>
+
+    <section id="courses">
+        <div class="container">
+            <h2>Our Courses</h2>
+            <ul>
+                <li>Core Subjects<ul><li>Circuit theory and Design</li><li>Digital Systems Design</li><li>Analog and digital signal processing</li><li>Control systems</li><li>Communication Systems</li><li>Electromagnetics</li><Li>Operating Systems</Li><li>Software engineering</li></ul></li>
+                <li>Embedded Systems</li>
+                <li>Robotics</li>
+                <li>Wireless communications</li>
+                <li>VLSI design</li>
+                <li>Power systems</li>
+            
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have questions or want to enroll? Reach out to us!</p>
+        </div>
+    </section>
+    </font>
+
+    <footer>
+        <p>&copy; 2024 ECE Course</p>
+    </footer>
+
+</body>
+</html>

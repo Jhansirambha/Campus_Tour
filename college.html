@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width",initial-scale=1.0"/>
+        <title>Registration Here</title>
+        <link rel="stylesheet" href="college.css" type="text/css">
+        <script>
+            // Get the video
+            var video = document.getElementById("myVideo");
+            
+            // Get the button
+            var btn = document.getElementById("myBtn");
+            
+            // Pause and play the video, and change the button text
+            function myFunction() {
+              if (video.paused) {
+                video.play();
+                btn.innerHTML = "Pause";
+              } else {
+                video.pause();
+                btn.innerHTML = "Play";
+              }
+            }
+            
+            </script>
+    </head>
+    <body>
+        <!-- The video -->
+<video autoplay muted loop id="myVideo">
+    <source src="university.mp4" type="video/mp4">
+  </video>
+  
+  <!-- Optional: some overlay text to describe the video -->
+  <div class="content">
+    <h1>Heading</h1>
+    <p>Lorem ipsum...</p>
+    <!-- Use a button to pause/play the video with JavaScript -->
+    <button id="myBtn" onclick="myFunction()">Pause</button>
+  
+    <div class="main">
+        <div class="register">
+            <h2>Register Here</h2>
+            <form id="register" name="form" method="POST"  action="userinfo.php" >
+                <h1><b><font color="blue" align="center">LOGIN</font></b></h1>
+                <h2><b><font color="blue">CENTURION UNIVERSITY</font></b></h2>
+
+                <label>First Name :</label>
+                <br>
+                <input type="text" name="f_name" id="name" placeholder="enter your flex-box">
+                <br><br>
+                <label>Last Name :</label>
+                <br>
+                <input type="text" name="l_name" id="name" placeholder="enter your lname">
+                <br><br>
+                <label>Email :</label>
+                <br>
+                <input type="email" name="e_mail" id="name" placeholder="enter your vaild email ">
+                <br><br>
+                <label>password :</label>
+                <br>
+                <input type="password" name="pass_word" id="name" placeholder="enter your vaild password ">
+                <br><br>
+                <label>Know language :</label>
+                <br>
+                &nbsp;&nbsp;&nbsp;
+                <input type="checkbox" name="lang" id="hindi" >
+                &nbsp;
+                <span id="hindi">hindi</span>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" name="english" id="english" >
+                &nbsp;
+                <span id="english">english</span>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" name="telugu" id="telugu" >
+                &nbsp;
+                <span id="telugu">telugu</span>
+                <br><br>
+                <script src="colloege.js"></script>
+                <button type="button" onclick="submitForm()">Submit</button>
+                <input type="reset" value="reset" name="reset" id="reset" >
+
+
+            </form>
+
+        </div>
+    </div>
+
+        </div>
+        
+    </body>
+</html>

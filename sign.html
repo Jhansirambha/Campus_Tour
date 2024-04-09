@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centurion University Login</title>
+    <link rel="stylesheet" href="sign.css">
+    <script src="sign.js">
+        // Get the video
+        var video = document.getElementById("myVideo");
+            
+            // Get the button
+            var btn = document.getElementById("myBtn");
+            
+            // Pause and play the video, and change the button text
+            function myFunction() {
+              if (video.paused) {
+                video.play();
+                btn.innerHTML = "Pause";
+              } else {
+                video.pause();
+                btn.innerHTML = "Play";
+              }
+            }
+    </script>
+</head>
+<body >
+
+    <!-- The video -->
+<video autoplay muted loop id="myVideo">
+<source src="octagon_-_5192 (540p).mp4" type="video/mp4">
+</video>
+ <!-- Optional: some overlay text to describe the video -->
+ <div class="content">
+   
+
+    
+    <center><div class="login-container">
+        <div id="container"><center><img src="cutm.jpeg"  alt="centurion" ></center></div>
+        <h3 id="login">CENTURION UNIVERSITY </h3>
+        <h4 id="login"><b>LOGIN</b></h4>
+        <form id="login-form">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <a class="pas" href="index2.html">Forget Password?</a>
+            <script src="signs.js"></script>
+                <button type="button" onclick="submitForm()">Submit</button>
+        </form>
+    </div>
+    </center>
+ </div>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Security Course</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            
+            margin: 0;
+            padding: 0;
+            background-color: hsl(0, 0%, 96%);
+            background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),url(depart.jpeg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        header {
+            background-color: #071e3ff5;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav {
+            background-color: #579dcd;
+            padding: 1em;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 1em;
+            font-weight: bold;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #06152c;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <script>
+        
+    document.getElementById('goHomeLink').addEventListener('click', function() {
+        document.getElementById('home').scrollIntoView({ behavior: 'smooth' });
+    });
+</script>
+
+    
+</head>
+<body >
+
+    <header>
+        <h1><marquee  scrollamount="15" >Cyber security Course</marquee></h1>
+    </header>
+
+    <nav>
+        <div class="container">
+            <a href="btech.html">Home</a>
+            <a href="#about">About</a>
+            <a href="#courses">Courses</a>
+            <a href="#contact">Contact</a>
+            <a href="btech.html" id="goHomeLink">Go Home</a>
+        </div>
+    </nav>
+    <font color="white">
+    <section id="home">
+        <div class="container">
+            <h2>Welcome to our Cyber Security Course!</h2>
+            <p>Start your journey to becoming a cyber Sequrity analist  with our comprehensive courses.</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Learn cyber Security from industry experts with hands-on experience.</p>
+        </div>
+    </section>
+
+    <section id="courses">
+        <div class="container">
+            <h2>Our Courses</h2>
+            <ul>
+                <li>Information Security.</li>
+                <li>Security Hacking.</li>
+                <li>Network Security</li>
+                <li>Certified Information Systems Security Professional (CISSP)</li>
+                <li>Linux</li>
+                <li>Security Operations Center (SOC) Analyst Skills </li>
+                <li>Python</li>
+                <li>Python Hacking</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Report a cybercrime to the Police . If you or your organization is the victim of a network intrusion, data breach, or ransomware attack, contact your nearest FBI field office or report it at tips.fbi.gov.</p>
+        </div>
+    </section>
+    </font>
+
+    <footer>
+        <p>&copy; 2024 Web Development Course</p>
+    </footer>
+
+</body>
+</html>
